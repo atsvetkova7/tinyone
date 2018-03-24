@@ -1,1 +1,12 @@
-@import 'libs';
+@import './libs';
+@import './helpers/mixins';
+@import './helpers/variables';
+@import './helpers/default';
+@import './helpers/grid';
+
+
+@import './components/button';
+
+@import './templates/header.scss';
+@import './templates/feature';
+@import './templates/footer';

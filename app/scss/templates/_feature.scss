@@ -1,0 +1,40 @@
+.features {
+    padding-top: 110px;
+    &__heading {
+        margin: 0 auto; 
+        padding-bottom: 90px; 
+    }
+    &__heading-title {
+        color: $color-dark;
+    }
+    &__heading-subtext {
+        color: #313841;
+    }  
+    &__item {
+        padding-left: 90px;
+        margin-bottom: 90px;
+        position: relative;
+    } 
+    &__title {
+        font-size: 2.2em;
+        color: $color-dark;
+        margin-bottom: 10px;
+    }
+    &__desc {
+        font-size: 1.6em;
+        color: #898989;
+    }
+}
+.heading-second {
+    text-align: center;
+    &__title {
+        margin: 0;
+        font-size: 3.2em;
+        margin-bottom: 15px;
+    }
+    &__subtext {
+        padding: 0 20px;
+        margin: 0;
+        font-size: 2em;
+    }
+}

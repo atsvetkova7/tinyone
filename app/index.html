@@ -5,94 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>tinyone</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.min.css">   
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="header__logo logo">
-                    <a href="#">tinyone</a>
+
+                <div class="row header__row">
+                    <div class="column header__logo logo">
+                        <a href="#" class="logo__link">tinyone</a>
+                    </div>
+                    <nav class="column header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link">Features</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Support</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">Features</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Support</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-                    </ul>
-                </nav>
-            </div>
+
         </div>
     </header>
     <main class="main">
         <section class="slider">
             <div class="container">
                 <div class="row">
-                    <div class="main-heading">
-                        <h1 class="main-heading__title">Inspire your inspiration</h1>
-                        <p class="main-heading__subtext">Simple to use for your app, products showcase and your inspiration</p>
-                        <p class="main-heading__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. 
-                                    Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit </p>
-                        <div class="app">
-                            <div class="app__item iOs"></div>
-                            <div class="app__item android"></div>
-                            <div class="app__item windows"></div>
+                    <div class="column col-7-md slider__description">
+                        <div class="main-heading">
+                            <h1 class="main-heading__title">Inspire your inspiration</h1>
+                            <p class="main-heading__subtext">Simple to use for your app, products showcase and your inspiration</p>
+                            <p class="main-heading__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. 
+                                                    Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit </p>
+                            <div class="app">
+                                <div class="app__item"><i class="fab fa-apple"></i></div>
+                                <div class="app__item"><i class="fab fa-android"></i></div>
+                                <div class="app__item"><i class="fab fa-windows"></i></div>
+                            </div>
                         </div>
+    
                     </div>
-                    <div class="main-picture">
-                        <img class="main-picture__img" alt="" />
-                    </div>
+                    <div class="column col-5-md slider__image">
+                        <img class="main-picture__img" alt="" src="./images/main-page.png" />
+                    </div>    
+                </div>
+                <div class="slider__dot">
+
                 </div>
             </div>
         </section>
+
+
+
+
+
         <section class="features">
             <div class="container">
-                <div class="second-heading features__heading">
-                    <h2 class="second-heading__title">Tinyone features</h2>
-                    <p class="second-heading__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
-                </div>
                 <div class="row">
-                    <div class="features__items">
-                        <div class="features__item">
+                    <div class="column col-10-md features__heading heading-second">
+                        <h2 class="features__heading-title heading-second__title">Tinyone features</h2>
+                        <p class="features__heading-subtext heading-second__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+                    </div>
+                </div>
+                <div class="row features__items">
+                        <div class="column col-4-md features__item">
                             <div class="features__title">Fully Responsive</div>
                             <div class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
                         </div>
-                        <div class="features__item">
+                        <div class="column col-4-md features__item">
                                 <div class="features__title">Fully Layered PSD</div>
                                 <div class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
                         </div>
-                        <div class="features__item">
+                        <div class="column col-4-md features__item">
                             <div class="features__title">Font Awesome Icons</div>
                             <div class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
                         </div>
-                        <div class="features__item">
+                        <div class="column col-4-md features__item">
                             <div class="features__title">HTML3 & CSS3 </div>
                             <div class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
                         </div>
-                        <div class="features__item">
+                        <div class="column col-4-md features__item">
                             <div class="features__title">Email Template</div>
                             <div class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
                         </div>
-                        <div class="features__item">
+                        <div class="column col-4-md features__item">
                             <div class="features__title">Free to download</div>
                             <div class="features__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
                         </div>
                     </div>
-                </div>
+
             </div>
         </section>
+
+
+
         <section class="contact">
             <div class="container">
-                <div class="second-heading contact__heading">
-                    <h2 class="second-heading__title">Keep in touch with us</h2>
-                    <p class="second-heading__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+                <div class="row">
+                    <div class="column col-10-md contact__heading heading-second ">
+                        <h2 class="contact__heading-title heading-second__title">Keep in touch with us</h2>
+                        <p class="contact__heading-subtext heading-second__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+                    </div>   
                 </div>
-                <div class="contact__form form">
-                    <input type="email" class="form__email" />
-                    <button class="form__btn btn btn__solid" type="submit">submit</button>
+                <div class="row">
+                    <div class="contact__form form column col-10-md">
+                        <input type="email" class="form__email" />
+                        <button class="form__btn btn btn__solid" type="submit">submit</button>
+                    </div>
                 </div>
                 <div class="contact__social social">
                     <div class="social__item social__facebook"><a href="#"></a></div>

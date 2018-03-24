@@ -1,0 +1,79 @@
+.header {
+    background-color: $bgc-top;
+    &__row {
+        padding-top: 50px;
+        align-items: flex-end;
+    }
+    &__logo {
+        margin-right: auto;
+    }
+}
+
+.menu {
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        display: inline-block;
+        margin-left: 78px;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 2.2em;
+        font-weight: bold;
+        color: $color-dark;
+    }
+}
+.logo {
+    &__link {
+        text-decoration: none;
+        font-size: 3em;
+        font-weight: bold;
+        color: $color-dark;
+    }
+}
+.slider {
+    background-color: $bgc-top;
+    padding-top: 65px;
+    padding-bottom: 100px;
+    &__image {
+        align-self: flex-end;
+        padding-left: 20px;
+    }
+    &__description {
+        padding-top: 60px;
+    }
+}
+
+.main-heading {
+    padding-left: 10px;
+    &__title {
+        font-size: 3.2em;
+        color: $color-dark;
+        margin: 0;
+    } 
+    &__subtext {
+        font-size: 2em;
+        color: $color-text;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 310px;
+    }
+    &__text {
+        font-size: 1.6em;
+        color: #555;
+        width: 100%;
+        max-width: 390px;
+    }
+}
+
+.app {
+    &__item {
+        display: inline-block;
+        font-size: 42px;
+        color: $color-dark;
+        margin-right: 35px;
+    }
+}
