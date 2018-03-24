@@ -16,17 +16,29 @@
         margin: 0 auto;
         padding: 0 20px;
         margin-bottom: 79px;
+        @media (max-width: 599px) {
+            margin: 0 0 15px 0;
+            padding: 0;
+
+        }
+
     }
     &__social {
         padding-bottom: 126px;
-
+        @media (max-width: 599px) {
+           padding-bottom: 25px;
+        }
     }
+
     
 }
 .form {
     display: flex;
     justify-content: center;
     flex-flow: row nowrap;
+    @media (max-width: 599px) {
+        flex-flow: column nowrap;
+    }
     &__email {
         width: 100%;
         max-width: 580px;
@@ -39,7 +51,9 @@
         font-size: 1.6em;
         font-family: 'PT Sans', sans-serif;
         margin-right: 21px;
-
+        @media (max-width: 599px) {
+            margin-bottom: 15px;
+        }
     }
 }
 
@@ -71,5 +85,8 @@
         color: $bgc-middle;
         font-size: 1.6em;
         line-height: 20px;
+    }
+    @media (max-width:599px) {
+        text-align: center;
     }
 }
