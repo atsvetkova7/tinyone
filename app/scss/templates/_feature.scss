@@ -14,6 +14,14 @@
         padding-left: 90px;
         margin-bottom: 90px;
         position: relative;
+        &::before {
+            position: absolute;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 50px;
+            color: $color-dark;
+            left: 0;
+        }
     } 
     &__title {
         font-size: 2.2em;
@@ -37,4 +45,26 @@
         margin: 0;
         font-size: 2em;
     }
+}
+.features__mob::before {
+    content: "\f3cd";
+}
+.features__lemon::before {
+    content:'\f094';
+    font-weight: 400;
+}
+.features__folder::before {
+    content: '\f07b';
+    font-weight: 400;
+}
+.features__tag::before {
+    content: '\f121';
+}
+.features__mail::before {
+    content: '\f0e0';
+    font-weight: 400;
+}
+.features__bookmark::before {
+    content: '\f02e';
+    font-weight: 400;
 }
