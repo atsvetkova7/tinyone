@@ -83,12 +83,20 @@
         &:first-child {
             margin-left: 0;
         }
+        
         @media (max-width: 599px) {
             display: block;
             margin: 0;
             width: 100%;
             text-align: center;
             padding: 15px;
+            &:hover {
+                background-color: rgba($color: #000, $alpha: 0.3);
+                .menu__link {
+                    color: $bgc-top;
+                }
+                
+            }
         }
     }
     &__link {
@@ -96,6 +104,25 @@
         font-size: 2.2em;
         font-weight: bold;
         color: $color-dark;
+        position: relative;
+        padding-bottom: 10px;
+        &:after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 0;
+            background-color: $bgc-middle;
+            transition: width .3s ease-in-out;
+            top: 100%;
+            left: 0;
+           
+        }
+        &:hover:after {
+            width: 100%;
+            @media (max-width: 599px) {
+                width: 0;
+            }
+        }
     }
 }
 .logo {

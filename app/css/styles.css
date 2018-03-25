@@ -2,7 +2,10 @@
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
 
 html {
   font-family: 'PT Sans', sans-serif;
@@ -96,10 +99,16 @@ body {
     font-size: 1.6em;
     font-weight: bold;
     -webkit-border-radius: 5px;
-            border-radius: 5px; }
+            border-radius: 5px;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; }
     @media (max-width: 599px) {
       .btn__solid {
         max-width: 100%; } }
+    .btn__solid:hover {
+      background-color: #c9af00;
+      font-size: 1.5em; }
 
 .header {
   background-color: #fcdb00; }
@@ -187,13 +196,35 @@ body {
       margin: 0;
       width: 100%;
       text-align: center;
-      padding: 15px; } }
+      padding: 15px; }
+      .menu__item:hover {
+        background-color: rgba(0, 0, 0, 0.3); }
+        .menu__item:hover .menu__link {
+          color: #fcdb00; } }
 
 .menu__link {
   text-decoration: none;
   font-size: 2.2em;
   font-weight: bold;
-  color: #010101; }
+  color: #010101;
+  position: relative;
+  padding-bottom: 10px; }
+  .menu__link:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    -webkit-transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    top: 100%;
+    left: 0; }
+  .menu__link:hover:after {
+    width: 100%; }
+    @media (max-width: 599px) {
+      .menu__link:hover:after {
+        width: 0; } }
 
 .logo {
   position: relative; }
@@ -401,7 +432,14 @@ body {
     font-size: 4.2em;
     color: #fcdb00;
     padding: 0 16px;
-    display: block; }
+    display: block;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .social__link:hover {
+      color: #c9af00;
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg); }
 
 .footer {
   background-color: #010101; }
@@ -417,6 +455,8 @@ body {
     color: #fff;
     font-size: 1.6em;
     line-height: 20px; }
+    .menu-list__link:hover {
+      color: #fcdb00; }
   @media (max-width: 599px) {
     .menu-list {
       text-align: center; } }

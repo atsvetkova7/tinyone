@@ -2,6 +2,7 @@
 *:before,
 *:after {
     box-sizing: border-box;
+    transition: all 0.3s linear;
 }
 html {
     font-family: 'PT Sans', sans-serif;

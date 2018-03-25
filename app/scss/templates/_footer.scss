@@ -65,6 +65,11 @@
         color: $bgc-top;
         padding: 0 16px;
         display: block;
+        transition: all 0.5s;
+        &:hover {
+            color: darken($bgc-top,10%);
+            transform: rotateY(360deg);
+        }
 
     }
 }
@@ -85,6 +90,9 @@
         color: $bgc-middle;
         font-size: 1.6em;
         line-height: 20px;
+        &:hover {
+            color: $bgc-top;
+        }
     }
     @media (max-width:599px) {
         text-align: center;
